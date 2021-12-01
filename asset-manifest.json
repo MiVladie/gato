@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/gato/static/css/main.0e4eb7d1.chunk.css",
-    "main.js": "/gato/static/js/main.e8e24038.chunk.js",
-    "main.js.map": "/gato/static/js/main.e8e24038.chunk.js.map",
+    "main.css": "/gato/static/css/main.7416698e.chunk.css",
+    "main.js": "/gato/static/js/main.4a27de72.chunk.js",
+    "main.js.map": "/gato/static/js/main.4a27de72.chunk.js.map",
     "runtime-main.js": "/gato/static/js/runtime-main.06610c10.js",
     "runtime-main.js.map": "/gato/static/js/runtime-main.06610c10.js.map",
-    "static/js/2.81a7b912.chunk.js": "/gato/static/js/2.81a7b912.chunk.js",
-    "static/js/2.81a7b912.chunk.js.map": "/gato/static/js/2.81a7b912.chunk.js.map",
+    "static/js/2.20ef2854.chunk.js": "/gato/static/js/2.20ef2854.chunk.js",
+    "static/js/2.20ef2854.chunk.js.map": "/gato/static/js/2.20ef2854.chunk.js.map",
     "index.html": "/gato/index.html",
-    "static/css/main.0e4eb7d1.chunk.css.map": "/gato/static/css/main.0e4eb7d1.chunk.css.map",
-    "static/js/2.81a7b912.chunk.js.LICENSE.txt": "/gato/static/js/2.81a7b912.chunk.js.LICENSE.txt"
+    "static/css/main.7416698e.chunk.css.map": "/gato/static/css/main.7416698e.chunk.css.map",
+    "static/js/2.20ef2854.chunk.js.LICENSE.txt": "/gato/static/js/2.20ef2854.chunk.js.LICENSE.txt",
+    "static/media/Layout.module.scss": "/gato/static/media/background.aac93df3.png",
+    "static/media/logo.d5132bdb.png": "/gato/static/media/logo.d5132bdb.png"
   },
   "entrypoints": [
     "static/js/runtime-main.06610c10.js",
-    "static/js/2.81a7b912.chunk.js",
-    "static/css/main.0e4eb7d1.chunk.css",
-    "static/js/main.e8e24038.chunk.js"
+    "static/js/2.20ef2854.chunk.js",
+    "static/css/main.7416698e.chunk.css",
+    "static/js/main.4a27de72.chunk.js"
   ]
 }
