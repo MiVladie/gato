@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+@mixin animations($color) {
+	&:hover {
+		img {
+			filter: brightness(0.85);
+		}
+	}
+
+	&:active {
+		img {
+			filter: brightness(0.75);
+		}
+	}
+
+	&:disabled {
+		img {
+			filter: brightness(0.85);
+		}
+	}
+}
+
+.Button {
+	width: 100%;
+	height: auto;
+
+	font-family: 'VT323', monospace;
+	font-size: 1.25em;
+	color: white;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: relative;
+	border-radius: 6px;
+
+	transition: all 0.15s;
+
+	background: none;
+	border: none;
+
+	@include animations(rgb(65, 53, 53));
+
+	img {
+		width: 100%;
+
+		object-fit: contain;
+	}
+
+	p {
+		position: absolute;
+
+		top: 50%;
+		left: 50%;
+
+		transform: translate(-50%, -50%);
+	}
+}
