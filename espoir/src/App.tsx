@@ -7,18 +7,16 @@ import Layout from 'hoc/Layout/Layout';
 
 import Home from 'pages/Home/Home';
 
-const App: React.FC = () => {
-	return (
-		<Layout>
-			<Helmet>
-				<title>Gato</title>
-			</Helmet>
+const App: React.FC = () => (
+	<Layout>
+		<Helmet>
+			<title>Gato</title>
+		</Helmet>
 
-			<Routes>
-				<Route path='/' element={<Home />} />
-			</Routes>
-		</Layout>
-	);
-};
+		<Routes>
+			<Route path='/' element={<Home />} />
+		</Routes>
+	</Layout>
+);
 
 export default App;

@@ -1,0 +1,49 @@
+$container_width: 85%;
+$spacing: 3em;
+
+.Main {
+	width: $container_width;
+
+	margin: 0 auto;
+
+	.Logo {
+		width: 100%;
+
+		object-fit: contain;
+
+		margin-top: calc(#{$spacing} / 1.5);
+	}
+
+	.Container {
+		width: 100%;
+
+		.Trailer,
+		.Actions {
+			width: 100%;
+
+			margin-top: $spacing;
+		}
+
+		.Actions {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			flex-flow: column;
+
+			button {
+				width: 85%;
+
+				margin-top: calc(#{$spacing} / 3);
+
+				&:nth-child(2) {
+					margin-top: 0;
+				}
+			}
+
+			.Play {
+				display: none;
+			}
+		}
+	}
+}
