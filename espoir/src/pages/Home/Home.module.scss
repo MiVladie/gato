@@ -4,6 +4,11 @@ $spacing: 3em;
 .Main {
 	width: $container_width;
 
+	display: flex;
+	justify-content: center;
+
+	flex-flow: column;
+
 	margin: 0 auto;
 
 	.Logo {
@@ -16,6 +21,12 @@ $spacing: 3em;
 
 	.Container {
 		width: 100%;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		flex-flow: column;
 
 		.Trailer,
 		.Actions {
@@ -43,6 +54,66 @@ $spacing: 3em;
 
 			.Play {
 				display: none;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 720px) {
+	$container_width: 75%;
+
+	.Main {
+		width: $container_width;
+
+		.Logo {
+			width: 65%;
+
+			margin: $spacing auto 0;
+		}
+
+		.Container {
+			.Actions {
+				button {
+					width: 50%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	$container_width: 85%;
+
+	.Main {
+		width: $container_width;
+
+		.Logo {
+			width: 25%;
+
+			margin: $spacing auto 0;
+		}
+
+		.Container {
+			flex-flow: row;
+
+			.Trailer {
+				width: 70%;
+			}
+
+			.Actions {
+				width: 30%;
+
+				.Play {
+					display: block;
+				}
+
+				button {
+					width: 60%;
+
+					&:nth-child(2) {
+						margin-top: $spacing;
+					}
+				}
 			}
 		}
 	}

@@ -23,7 +23,7 @@ const Home: React.FC = () => {
 					<Video
 						className={classes.Trailer}
 						title='Gato Trailer'
-						url='https://www.youtube.com/embed/5kUu97Vkwj4'
+						url='https://www.youtube.com/embed/OGZE16bhKgQ'
 					/>
 
 					<div className={classes.Actions}>
