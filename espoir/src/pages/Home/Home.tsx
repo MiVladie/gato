@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Helmet } from 'react-helmet';
+import { useNavigate } from 'react-router-dom';
 
 import Video from 'components/Video/Video';
 import Button from 'components/Button/Button';
@@ -10,6 +11,8 @@ import logo from 'assets/icons/logo.png';
 import classes from './Home.module.scss';
 
 const Home: React.FC = () => {
+	const navigate = useNavigate();
+
 	return (
 		<>
 			<Helmet>
@@ -27,7 +30,7 @@ const Home: React.FC = () => {
 					/>
 
 					<div className={classes.Actions}>
-						<Button onClick={() => console.log('Play!')} className={classes.Play}>
+						<Button onClick={() => navigate('/play')} className={classes.Play}>
 							Play
 						</Button>
 
