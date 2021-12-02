@@ -23,5 +23,5 @@
 		"baseUrl": "./src",
 		"isolatedModules": true
 	},
-	"include": ["src"]
+	"include": ["src", "public/project"]
 }
