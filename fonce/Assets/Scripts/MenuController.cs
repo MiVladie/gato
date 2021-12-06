@@ -6,22 +6,55 @@ using UnityEngine.SceneManagement;
 public class MenuController : MonoBehaviour
 {
     public GameObject ContinueButton;
+    public GameObject ExitButton;
+
+    private bool canContinue = false;
+    private bool canExit = false;
 
     void Start()
     {
         AnalyseProgress();
     }
 
+    void Update()
+    {
+        ListenKeys();
+    }
+
+    void ListenKeys()
+    {
+        // New Game
+        if(Input.GetKeyDown(KeyCode.N))
+        {
+            NewGame();
+        }
+        
+        // Continue
+        if(canContinue && Input.GetKeyDown(KeyCode.E))
+        {
+            ContinueGame();
+        }
+
+        // Exit
+        if(canExit && Input.GetKeyDown(KeyCode.Escape))
+        {
+            Exit();
+        }
+    }
+
     void AnalyseProgress()
     {
-        ContinueButton.SetActive(
-            PlayerPrefs.HasKey("LEVEL") &&
+        canContinue = PlayerPrefs.HasKey("LEVEL") &&
             PlayerPrefs.HasKey("LIVES") &&
-            PlayerPrefs.GetInt("LIVES") >= 1 && (
+            (
                 PlayerPrefs.GetInt("LEVEL") != 1 ||
                 PlayerPrefs.GetInt("CHECKPOINT") != 0
-            )
-        );
+            );
+
+        canExit = Application.platform != RuntimePlatform.WebGLPlayer;
+
+        ContinueButton.SetActive(canContinue);
+        ExitButton.SetActive(canExit);
     }
 
     public void ContinueGame()
