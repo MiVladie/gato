@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
-@mixin animations($color) {
+@mixin animations() {
 	&:hover {
 		img {
 			filter: brightness(0.85);
@@ -35,17 +35,17 @@
 	position: relative;
 	border-radius: 6px;
 
-	transition: all 0.15s;
-
 	background: none;
 	border: none;
 
-	@include animations(rgb(65, 53, 53));
+	@include animations();
 
 	img {
 		width: 100%;
 
 		object-fit: contain;
+
+		transition: all 0.1s;
 	}
 
 	p {

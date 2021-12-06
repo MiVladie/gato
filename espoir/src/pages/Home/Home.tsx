@@ -20,13 +20,13 @@ const Home: React.FC = () => {
 			</Helmet>
 
 			<div className={classes.Main}>
-				<img className={classes.Logo} src={logo} />
+				<img className={classes.Logo} src={logo} alt='Gato Logo' />
 
 				<div className={classes.Container}>
 					<Video
 						className={classes.Trailer}
 						title='Gato Trailer'
-						url='https://www.youtube.com/embed/OGZE16bhKgQ'
+						url='https://www.youtube.com/embed/OGZE16bhKgQ?autoplay=1&controls=0'
 					/>
 
 					<div className={classes.Actions}>
