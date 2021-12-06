@@ -34,11 +34,25 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        ListenKeys();
+    }
+
+    void ListenKeys()
+    {
+        // Pause
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            OpenMenu();
+        }
+    }
+
     void Initialize()
     {
         pController = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
 
-        if (Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.WindowsEditor)
+        if (Application.platform != RuntimePlatform.Android)
         {
             controls.SetActive(false);
         }
