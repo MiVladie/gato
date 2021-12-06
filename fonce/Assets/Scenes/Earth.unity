@@ -11698,7 +11698,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1150621472}
           m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-          m_MethodName: MoveLeft
+          m_MethodName: MoveRight
           m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -15403,6 +15403,68 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5335329190473751374, guid: 6b20caa1dfdd61d4c9d040b04d3ad66b, type: 3}
   m_PrefabInstance: {fileID: 1018534050}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1112643265
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2141910708}
+    m_Modifications:
+    - target: {fileID: 446518154355648474, guid: e0faeb579e6dd6e42a48c240f1c90e31, type: 3}
+      propertyPath: m_RootOrder
+      value: 359
+      objectReference: {fileID: 0}
+    - target: {fileID: 446518154355648474, guid: e0faeb579e6dd6e42a48c240f1c90e31, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 446518154355648474, guid: e0faeb579e6dd6e42a48c240f1c90e31, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 446518154355648474, guid: e0faeb579e6dd6e42a48c240f1c90e31, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 405
+      objectReference: {fileID: 0}
+    - target: {fileID: 446518154355648474, guid: e0faeb579e6dd6e42a48c240f1c90e31, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 446518154355648474, guid: e0faeb579e6dd6e42a48c240f1c90e31, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 446518154355648474, guid: e0faeb579e6dd6e42a48c240f1c90e31, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 446518154355648474, guid: e0faeb579e6dd6e42a48c240f1c90e31, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 446518154355648474, guid: e0faeb579e6dd6e42a48c240f1c90e31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 446518154355648474, guid: e0faeb579e6dd6e42a48c240f1c90e31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 446518154355648474, guid: e0faeb579e6dd6e42a48c240f1c90e31, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 970958144833453408, guid: e0faeb579e6dd6e42a48c240f1c90e31, type: 3}
+      propertyPath: m_Name
+      value: Stone (54)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e0faeb579e6dd6e42a48c240f1c90e31, type: 3}
+--- !u!4 &1112643266 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 446518154355648474, guid: e0faeb579e6dd6e42a48c240f1c90e31, type: 3}
+  m_PrefabInstance: {fileID: 1112643265}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1116325545
 PrefabInstance:
@@ -23766,6 +23828,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 485198739389533547, guid: a7714888c38623e4d9d5426f1e0e3e40, type: 3}
+      propertyPath: jump
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 485198739389533547, guid: a7714888c38623e4d9d5426f1e0e3e40, type: 3}
+      propertyPath: left
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 485198739389533547, guid: a7714888c38623e4d9d5426f1e0e3e40, type: 3}
+      propertyPath: right
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2064209231314915068, guid: a7714888c38623e4d9d5426f1e0e3e40, type: 3}
       propertyPath: objective
       value: 
@@ -30496,6 +30570,7 @@ Transform:
   - {fileID: 765607700}
   - {fileID: 650008161}
   - {fileID: 916710883}
+  - {fileID: 1112643266}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

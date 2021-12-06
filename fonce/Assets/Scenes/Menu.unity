@@ -313,6 +313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ContinueButton: {fileID: 1175589725}
+  ExitButton: {fileID: 995594252}
 --- !u!1 &380495577
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,7 +384,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Game
+  m_Text: New Game (N)
 --- !u!222 &380495580
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -528,7 +529,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Exit
+  m_Text: Exit (Esc)
 --- !u!222 &520841757
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1004,7 +1005,7 @@ MonoBehaviour:
   - name: Theme
     clip: {fileID: 8300000, guid: e07d614fe9dca9d4da54c802ca981579, type: 3}
     loop: 1
-    volume: 0.25
+    volume: 0.15
     pitch: 1
     source: {fileID: 0}
   - name: Button
@@ -1406,7 +1407,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 63f5e3a79538573469de6effe6e1c4b9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3f6256fce6b936a489be2fb6a30a1f4e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1494,7 +1495,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Continue
+  m_Text: Continue (E)
 --- !u!222 &2079374478
 CanvasRenderer:
   m_ObjectHideFlags: 0

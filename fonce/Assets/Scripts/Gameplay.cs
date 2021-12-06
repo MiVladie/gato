@@ -98,11 +98,7 @@ public class Gameplay : MonoBehaviour
 
         PlayerPrefs.SetInt("LIVES", currentLives);
 
-        if(currentLives >= 1) {
-            SceneManager.LoadScene("Respawn");
-        } else {
-            SceneManager.LoadScene("Menu");
-        }
+        SceneManager.LoadScene("Respawn");
     }
 
     private string GetObjectiveByCutscene(string name)
