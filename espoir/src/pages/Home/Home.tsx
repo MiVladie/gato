@@ -9,6 +9,7 @@ import Button from 'components/Button/Button';
 import logo from 'assets/icons/logo.png';
 
 import classes from './Home.module.scss';
+import { isMobile } from 'util/screen';
 
 const Home: React.FC = () => {
 	const navigate = useNavigate();
@@ -30,9 +31,11 @@ const Home: React.FC = () => {
 					/>
 
 					<div className={classes.Actions}>
-						<Button onClick={() => navigate('/play')} className={classes.Play}>
-							Play
-						</Button>
+						{!isMobile() && (
+							<Button onClick={() => navigate('/play')} className={classes.Play}>
+								Play
+							</Button>
+						)}
 
 						<Button onClick={() => console.log('Download (.exe)')}>Download (.exe)</Button>
 						<Button onClick={() => console.log('Download (.apk)')}>Download (.apk)</Button>

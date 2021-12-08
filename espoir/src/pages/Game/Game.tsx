@@ -38,11 +38,11 @@ const Game: React.FC = () => {
 				<title>Game | Gato</title>
 			</Helmet>
 
-			<button className={classes.Back} onClick={() => navigate('/')}>
-				<img src={back} alt='back' width='50' height='50' />
-			</button>
-
 			<div className={classes.Main}>
+				<button className={classes.Back} onClick={() => navigate('/')}>
+					<img src={back} alt='back' width='50' height='50' />
+				</button>
+
 				{progression !== 1 && <p className={classes.Loading}>{Math.round(progression * 100)}%</p>}
 
 				<Unity
