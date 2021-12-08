@@ -90,7 +90,7 @@ $spacing: 3em;
 			.Actions {
 				flex-flow: row;
 
-				justify-content: space-between;
+				justify-content: space-around;
 
 				button {
 					width: 32%;
@@ -126,14 +126,14 @@ $spacing: 3em;
 				justify-content: center;
 				flex-flow: column;
 
+				.Play {
+					margin-bottom: calc(#{$spacing} / 2);
+				}
+
 				button {
 					width: 65%;
 
 					margin-top: calc(#{$spacing} / 3);
-
-					&:nth-child(1) {
-						margin-bottom: calc(#{$spacing} / 2);
-					}
 				}
 			}
 		}
