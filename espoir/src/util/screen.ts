@@ -5,3 +5,8 @@ export const isMobile = (): boolean => {
 		return navigator.userAgent.match(toMatchItem);
 	});
 };
+
+export const openURL = (url: string, newTab = false) => {
+	if (newTab) window.open(url, '_blank', 'noopener,noreferrer');
+	else window.location.href = url;
+};

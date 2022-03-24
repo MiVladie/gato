@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Helmet } from 'react-helmet';
 import { useNavigate } from 'react-router-dom';
+import { isMobile, openURL } from 'util/screen';
 
 import Video from 'components/Video/Video';
 import Button from 'components/Button/Button';
@@ -9,7 +10,6 @@ import Button from 'components/Button/Button';
 import logo from 'assets/icons/logo.png';
 
 import classes from './Home.module.scss';
-import { isMobile } from 'util/screen';
 
 const Home: React.FC = () => {
 	const navigate = useNavigate();
@@ -37,8 +37,8 @@ const Home: React.FC = () => {
 							</Button>
 						)}
 
-						<Button onClick={() => console.log('Download (.exe)')}>Download (.exe)</Button>
-						<Button onClick={() => console.log('Download (.apk)')}>Download (.apk)</Button>
+						<Button onClick={() => openURL('https://mivladie.github.io/weebin/')}>Weebin</Button>
+						<Button onClick={() => openURL('https://github.com/MiVladie/gato', true)}>GitHub</Button>
 					</div>
 				</div>
 			</div>

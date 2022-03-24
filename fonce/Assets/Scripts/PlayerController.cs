@@ -41,6 +41,8 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKey(KeyCode.W))
         {
             JumpPlayer(true);
+        } else {
+            JumpPlayer(false);
         }
         
         // Moving
@@ -55,7 +57,7 @@ public class PlayerController : MonoBehaviour
         // Shooting
         if(Input.GetKey(KeyCode.Space))
         {
-            ShootPlayer(true);
+            ShootPlayer();
         }
     }
 
@@ -85,8 +87,6 @@ public class PlayerController : MonoBehaviour
 
     public void JumpPlayer(bool isJumping)
     {
-        isJumping = isJumping || Input.GetKey(KeyCode.W);
-
         // Jumping
         if(isJumping && groundColliders.Count > 0) {
             rb.velocity = Vector3.up * jumpForce;
@@ -94,18 +94,16 @@ public class PlayerController : MonoBehaviour
         
         // Improving
         if(rb.velocity.y < 0) {
-            rb.velocity += Vector3.up * Physics.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+            rb.velocity += Vector3.up * Physics.gravity.y * (fallMultiplier - 1) * Time.deltaTime * 2;
         } else if(rb.velocity.y > 0 && !isJumping) {
-            rb.velocity += Vector3.up * Physics.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
+            rb.velocity += Vector3.up * Physics.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime * 2;
         }
     }
 
-    public void ShootPlayer(bool isShooting)
+    public void ShootPlayer()
     {
-        isShooting = isShooting || Input.GetKey(KeyCode.Space);
-
         // Shooting
-        if(isShooting && enableShooting && canShoot) {
+        if(enableShooting && canShoot) {
             FindObjectOfType<AudioManager>().Play("Shoot");
 
             GameObject bullet = Instantiate(hairball, transform.position + new Vector3(0, 0.35f, isForward ? 1.5f : -1.5f), Quaternion.Euler(0, 0, 10), rounds) as GameObject;

@@ -76,7 +76,6 @@ public class Gameplay : MonoBehaviour
             
             case "Hairballs":
                 GetComponent<PlayerController>().enableShooting = true;
-                FindObjectOfType<UIManager>().EnableShooting();
                 Destroy(col.gameObject);
                 break;
 
